@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Register</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row my-3 mx-5">
+            <!-- <div class="col-12 text-center">
+                <img class="img-fluid" width="200px" src="/pinboard/resources/img/logo.png" alt="Logo">
+            </div> -->
+        </div>
+        <div class="row my-3">
+            <div class="col text-center">
+                <h2>register</h2>
+            </div>
+        </div>
+
+        <div class=" row ">
+            <div class="col-12 py-3">
+                <label>prename*</label>
+                <input class="form-control" type="text" id="firstname" placeholder="Hans">
+            </div>
+            <div class="col-12 py-3">
+                <label>lastname*</label>
+                <input class="form-control" type="text" id="lastname" placeholder="Muster">
+            </div>
+            <div class="col-12 py-3">
+                <label>email*</label>
+                <input class="form-control" type="email" id="email" placeholder="hans.muster@mustermail.com">
+            </div>
+            <div class="col-12 py-3">
+                <label>password*</label>
+                <input class="form-control" type="password" id="password" placeholder="password">
+            </div>
+            <div class="col-12 py-3">
+                <label>repeat password*</label>
+                <input class="form-control" type="password" id="repeatedpassword" placeholder="repeat passsword">
+            </div>
+
+            <div class="text-danger col-12 py-3">
+                *mandatory fields
+            </div>
+
+            <div class="text-center col-lg-4 col-md-12 col-sm-12 py-3" id="message">
+
+            </div>
+            <div class=" col-lg-1 col-md-1 col-sm-1 py-3 text-right">
+                <button class="btn btn-outline-success" onclick="register(
+                        document.getElementById('firstname').value.trim(),
+                        document.getElementById('lastname').value.trim(),
+                        document.getElementById('email').value.trim(),
+                        document.getElementById('password').value.trim(),
+                        document.getElementById('repeatedpassword').value.trim()
+                    )">register
+                </button>
+            </div>
+            <div class="col-lg-6 col-md-1 col-sm-1 py-3 text-right">
+                <a class="btn btn-outline-warning" href="index.html">already registered?</a>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="resources/js/user.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <div class="fixed-bottom card text-center">
+
+        <div class="card-footer text-muted">31.05.2021 <br> Noah Zuppiger / Hannes Bickel <br> <a target="_blank" class="my-2 btn btn-outline-primary" href="https://www.github.com">Github Link</a></div>
+    </div>
+</body>
+
+</html>
